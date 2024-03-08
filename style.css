@@ -2,9 +2,16 @@
   margin: 0px;
   padding: 0px;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: Poppins, sans-serif;
 }
+body::-webkit-scrollbar {
+  width: 0; 
+}
+
 .offer{
   background-color:#1D232C ;
   color: white;
@@ -112,7 +119,7 @@ color: white
     z-index: 1;
 }
 .slider__image{
-  width: 100vw;
+  transition: 2s;
   display: flex;
 }
 .slider__image img{

@@ -27,13 +27,13 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
   <!--offer display-->
   <div class="offer">
     <p>Sign up and <b>Get 20% OFF </b>for your first Order</p>
-    <i class="fa-solid fa-xmark "></i>
+    <i id="offer-close" class="fa-solid fa-xmark "></i>
   </div>
  
     <!--responsive navbar-->
     <nav class="navbar">
       <h1>Nostra</h1>
-      <i class="fa-solid fa-bars "></i>
+      <i id="sidebar-activate" class="fa-solid fa-bars " style="cursor: pointer;"></i>
       <div class="navbar-links">
         <p class="navbar-links__link">
           <a href="./index.html">Home</a>
@@ -55,7 +55,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 <!--side bar-->
 <section class="sidebar">
   <p style="text-align: right;">
-    <i class="fa-solid fa-xmark"></i>
+    <i id="sidebar-deactivate" class="fa-solid fa-xmark" style="cursor:pointer"></i>
   </p>
   <div class="sidebar__links">
     <p><a href="index.html">Home</a></p>
@@ -70,20 +70,20 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     <!--slider-->
     <section class="slider">
       <div class="slider__leftbtn">
-        <i class="fa-solid fa-chevron-left"></i>
+        <i id="left-activate" class="fa-solid fa-chevron-left" style="cursor: pointer;"></i>
       </div>
       <div class="slider__content">
         <h1>Level Up your style with our</h1>
         <h4>Summer Collections</h4>
-        <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+        <button>Shop Now <i class="fa-solid fa-arrow-right" ></i></button>
       </div>
       <div class="slider__image">
+        <img src="./images/slider-one.jpg" alt="slider image" width="100%">
         <img src="./images/slider-one.jpg" alt="slider image">
         <img src="./images/slider-one.jpg" alt="slider image">
-
       </div>
       <div class="slider__rightbtn">
-        <i class="fa-solid fa-chevron-right"></i>
+        <i id="right-activate" class="fa-solid fa-chevron-right" style="cursor: pointer;"></i>
       </div>
     </section>
 
@@ -271,5 +271,5 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     <p>@ 2023 Nostra.com</p>
   </section>
 </body>
-
+<script src="./index.js"></script>
 </html>
